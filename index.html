@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon's | Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- WebGL Background -->
+    <canvas id="webgl-canvas"></canvas>
+
+    <!-- Nano Awards Badge -->
+    <div class="award-badge">
+        <div class="particle-ring"></div>
+        <span>Global Tech Awards 2025 Finalist</span>
+    </div>
+
+    <!-- Cyberpunk Navigation -->
+    <nav class="neon-nav">
+        <div class="hologram-logo">
+            <span>M</span><span>U</span><span>N</span><span>T</span><span>A</span><span>K</span><span>I</span><span>M</span><span> </span><span> </span><span>A</span><span>H</span><span>M</span><span>E</span><span>D</span><span>🌙</span>
+        </div>
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul>
+            <li><a href="#My_Projects" data-hover="My_Projects">My_Projects</a></li>
+            <li><a href="#Spaces" data-hover="Spaces">Spaces</a></li>
+            <li><a href="#Achievements" data-hover="Achievements">Achievements</a></li>
+            <li><a href="#labs" data-hover="Labs">Labs</a></li>
+            <li><a href="#About Me" data-hover="About Me">About Me</a></li>
+        </ul>
+        <div class="nav-pulse"></div>
+    </nav>
+    
+    <!-- Mobile Navigation -->
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+    <div class="mobile-nav" id="mobile-nav">
+        <ul>
+            <li><a href="#My_Projects">My_Projects</a></li>
+            <li><a href="#Spaces">Spaces</a></li>
+            <li><a href="#Achievements">Achievements</a></li>
+            <li><a href="#labs">Labs</a></li>
+            <li><a href="#About Me">About Me</a></li>
+        </ul>
+    </div>
+    <!-- Profile Image -->
+<div class="profile-photo-container">
+    <img src="assets/moon.jpg" alt="Muntakim Ahmed" class="profile-photo">
+</div>
+
+
+    <!-- Holographic Hero -->
+    <section class="hologram-section">
+        <div class="hologram-container">
+            <div class="hologram-content">
+                <h1 class="glitch-title" data-text="MUNTAKIM AHMED The Developer">
+                    Muntakim<span> </span>Ahmed<span> </span>The Developer
+                </h1>
+                <p class="neon-subtitle">Architecting tomorrow's technology at quantum scale</p>
+                <div class="particle-cta">
+                    <a href="#quantum" class="quantum-btn">
+                        <span>Enter the Moon's Quantum World</span>
+                        <div class="quantum-trail"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="particle-field"></div>
+    </section>
+
+    <!-- Innovation Showcase -->
+    <section id="innovation" class="innovation-section">
+        <div class="section-header">
+            <h2>My Projects</h2>
+            <div class="circuit-divider"></div>
+            <p>Where impossible becomes iterative</p>
+        </div>
+
+        <div class="innovation-grid">
+            <!-- Project 1: Quantum AI -->
+            <div class="innovation-card">
+                <div class="card-header">
+                    <div class="tech-badges">
+                        <span class="badge quantum">SWIFT CHAT</span>
+                        <span class="breakthrough">6th Semester Project 2025 [ Software Development Lab (lll) ]</span>
+                    </div>
+                    <div class="award-ribbon">
+                        <i class="fas fa-leaf"></i> BD Apps ongoing Project...
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>A Real Time chat application through flutter and Firebase.</h3>
+                    <p class="excerpt">Bridging consciousness and computation through photonic processing</p>
+                    <div class="tech-stack">
+                        <span>#Flutter</span>
+                        <span>#FireBase</span>
+                        <span>#Dart</span>
+                    </div>
+                </div>
+                <div class="card-stats">
+                    <div class="stat">
+                        <span class="value">2x</span>
+                        <span>Faster than classical chat App</span>
+                    </div>
+                    <div class="stat">
+                        <span class="value">13%</span>
+                        <span>Time Reduction</span>
+                    </div>
+                    <div class="stat">
+                        <span class="value">Patent #</span>
+                        <span>BD2025/0142786A1</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="hologram-link">
+                        <span>On Going</span>
+                        <div class="link-beam"></div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 2: Sustainable Cloud -->
+            <div class="innovation-card">
+                <div class="card-header">
+                    <div class="tech-badges">
+                        <span class="badge sustainable">Super Market Billing System</span>
+                        <span class="breakthrough">A C++ Project</span>
+                    </div>
+                    <div class="award-ribbon">
+                        <i class="fas fa-leaf"></i> This Project has been finished.
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Nicely handle Super Market Billing System</h3>
+                    <p class="excerpt">It was my 3rd Semester Project.</p>
+                    <div class="tech-stack">
+                        <span>C++</span>
+                        <span>With Type Effect</span>
+                        <span>Ongoing a GUI implementation</span>
+                    </div>
+                </div>
+                <div class="card-stats">
+                    <div class="stat">
+                        <span class="value">90%</span>
+                        <span>Marks Obtain</span>
+                    </div>
+                    <div class="stat">
+                        <span class="value">No. #1</span>
+                        <span>Developer Choice</span>
+                    </div>
+                    <div class="stat">
+                        <span class="value">Code optimized</span>
+                        <span>By Muntakim Ahmed</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="hologram-link">
+                        <span>Project Done✔️</span>
+                        <div class="link-beam"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Gallery -->
+    <section id="awards" class="awards-section">
+        <div class="section-header">
+            <h2>GLOBAL RECOGNITION</h2>
+            <div class="circuit-divider"></div>
+            <p>To be Continue...</p>
+        </div>
+
+        <div class="awards-timeline">
+            <div class="timeline-track"></div>
+            
+            <div class="award-event">
+                <div class="event-badge">
+                    <div class="hologram-emblem"></div>
+                </div>
+                <div class="event-content">
+                    <h3>Award Gallery</h3>
+                    <span class="award-title">Uploading Soon...</span>
+                    <p class="event-desc">Now Learning Dart...</p>
+                    <div class="tech-tags">
+                        <span>C</span>
+                        <span>C++</span>
+                        <span>Java</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="award-event">
+                <div class="event-badge">
+                    <div class="hologram-emblem platinum"></div>
+                </div>
+                <div class="event-content">
+                    <h3>Award Gallery</h3>
+                    <span class="award-title">Uploading Soon...</span>
+                    <p class="event-desc">Sustainable AI infrastructure design</p>
+                    <div class="tech-tags">
+                        <span>...</span>
+                        <span>...</span>
+                        <span>...</span>
+                    </div>
+                </div>
+            </div>
+
+             <div class="award-event">
+                <div class="event-badge">
+                    <div class="hologram-emblem platinum"></div>
+                </div>
+                <div class="event-content">
+                    <h3>Award Gallery</h3>
+                    <span class="award-title">Uploading Soon...</span>
+                    <p class="event-desc">Sustainable AI infrastructure design</p>
+                    <div class="tech-tags">
+                        <span>...</span>
+                        <span>...</span>
+                        <span>...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Manifesto -->
+    <section id="manifesto" class="manifesto-section">
+        <div class="manifesto-grid">
+            <div class="manifesto-header">
+                <h2>TECHNOLOGY MANIFESTO</h2>
+                <div class="circuit-divider"></div>
+                <p>Principles driving the next evolution</p>
+            </div>
+            <div class="manifesto-principles">
+                <div class="principle-card">
+                    <div class="principle-icon">
+                        <div class="quantum-dot"></div>
+                    </div>
+                    <h3>Blank</h3>
+                    <p>...</p>
+                    <div class="signature">Blank</div>
+                </div>
+                <div class="principle-card">
+                    <div class="principle-icon">
+                        <div class="carbon-negative"></div>
+                    </div>
+                    <h3>Blank</h3>
+                    <p>...</p>
+                    <div class="signature">Blank</div>
+                </div>
+                <div class="principle-card">
+                    <div class="principle-icon">
+                        <div class="neuro-symmetry"></div>
+                    </div>
+                    <h3>Blank</h3>
+                    <p>...</p>
+                    <div class="signature">Blank</div>
+                </div>
+            </div>
+            <div class="manifesto-footer">
+                <div class="particle-cta">
+                    <a href="#" class="quantum-btn">
+                        <span>Manifesto Coming Soon</span>
+                        <div class="quantum-trail"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quantum Interface -->
+    <section id="quantum" class="quantum-section">
+        <div class="quantum-terminal">
+            <div class="terminal-header">
+                <div class="traffic-lights">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="terminal-title">QUANTUM CONSOLE v3.1.8</div>
+            </div>
+            <div class="terminal-body">
+                <div class="terminal-output">
+                    <div>> Initializing quantum state vector...</div>
+                    <div class="success">√ System ready | Qubits stable</div>
+                    <div>> Connecting to photonic processor network...</div>
+                    <div class="success">√ 12.8 petaqubits online</div>
+                    <div>> Running consciousness mapping algorithm</div>
+                    <div class="pulse">Neuro-synaptic interface established</div>
+                    <div class="signature">ALEX MORGAN | QUANTUM ARCHITECT</div>
+                </div>
+                <div class="terminal-input">
+                    <span>></span>
+                    <input type="text" placeholder="Enter quantum command...">
+                </div>
+            </div>
+            <div class="quantum-visualization">
+                <div class="qubit-sphere"></div>
+                <div class="quantum-entanglement"></div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Mobile Navigation
+        const hamburger = document.getElementById('hamburger');
+        const mobileNav = document.getElementById('mobile-nav');
+        const mobileOverlay = document.getElementById('mobile-overlay');
+        
+        hamburger.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+            mobileOverlay.classList.toggle('active');
+            document.body.classList.toggle('no-scroll');
+        });
+        
+        mobileOverlay.addEventListener('click', () => {
+            mobileNav.classList.remove('active');
+            mobileOverlay.classList.remove('active');
+            document.body.classList.remove('no-scroll');
+        });
+        
+        // Simple Three.js Background
+        document.addEventListener('DOMContentLoaded', function() {
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            const renderer = new THREE.WebGLRenderer({ 
+                canvas: document.getElementById('webgl-canvas'),
+                alpha: true,
+                antialias: true
+            });
+            
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setClearColor(0x000000, 0);
+            
+            // Create particles
+            const particlesGeometry = new THREE.BufferGeometry();
+            const particlesCount = 5000;
+            
+            const posArray = new Float32Array(particlesCount * 3);
+            const colorArray = new Float32Array(particlesCount * 3);
+            
+            for(let i = 0; i < particlesCount * 3; i++) {
+                posArray[i] = (Math.random() - 0.5) * 20;
+                colorArray[i] = Math.random();
+            }
+            
+            particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+            particlesGeometry.setAttribute('color', new THREE.BufferAttribute(colorArray, 3));
+            
+            const particlesMaterial = new THREE.PointsMaterial({
+                size: 0.02,
+                vertexColors: true,
+                transparent: true,
+                opacity: 0.8,
+                blending: THREE.AdditiveBlending
+            });
+            
+            const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
+            scene.add(particlesMesh);
+            
+            camera.position.z = 5;
+            
+            // Animation
+            function animate() {
+                requestAnimationFrame(animate);
+                
+                particlesMesh.rotation.x += 0.0005;
+                particlesMesh.rotation.y += 0.001;
+                
+                renderer.render(scene, camera);
+            }
+            
+            animate();
+            
+            // Handle window resize
+            window.addEventListener('resize', () => {
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(window.innerWidth, window.innerHeight);
+                
+            });
+        });
+    </script>
+</body>
+        <footer class="footer">
+  <p>&copy; 2025. All rights reserved by Nafisa Sraboni.</p>
+</footer>
+
+</html>
